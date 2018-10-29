@@ -8,23 +8,23 @@ class Cluster<%=cluster_number%> {
     var five = "hello"
 
     fun one() {
-        java.lang.System.out.println(one);
+        System.out.println(one + "<%=cluster_number%>")
     }
 
     fun two() {
-        java.lang.System.out.println(two);
+        System.out.println(two + "<%=cluster_number%>")
     }
 
     fun three() {
-        java.lang.System.out.println(three);
+        System.out.println(two + "<%=cluster_number%>")
     }
 
     fun four() {
-        java.lang.System.out.println(four);
+        System.out.println(two + "<%=cluster_number%>")
     }
 
     fun five() {
-        java.lang.System.out.println(five);
+        System.out.println(two + "<%=cluster_number%>")
     }
 
 }
@@ -38,23 +38,23 @@ class ClusterB<%=cluster_number%> {
     var five = "hello"
 
     fun one() {
-        java.lang.System.out.println(one);
+        System.out.println(one + "<%=cluster_number%>")
     }
 
     fun two() {
-        java.lang.System.out.println(two);
+        System.out.println(two + "<%=cluster_number%>")
     }
 
     fun three() {
-        java.lang.System.out.println(three);
+        System.out.println(two + "<%=cluster_number%>")
     }
 
     fun four() {
-        java.lang.System.out.println(four);
+        System.out.println(two + "<%=cluster_number%>")
     }
 
     fun five() {
-        java.lang.System.out.println(five);
+        System.out.println(two + "<%=cluster_number%>")
     }
 
 }
@@ -68,23 +68,23 @@ class ClusterC<%=cluster_number%> {
     var five = "hello"
 
     fun one() {
-        java.lang.System.out.println(one);
+        System.out.println(one + "<%=cluster_number%>")
     }
 
     fun two() {
-        java.lang.System.out.println(two);
+        System.out.println(two + "<%=cluster_number%>")
     }
 
     fun three() {
-        java.lang.System.out.println(three);
+        System.out.println(two + "<%=cluster_number%>")
     }
 
     fun four() {
-        java.lang.System.out.println(four);
+        System.out.println(two + "<%=cluster_number%>")
     }
 
     fun five() {
-        java.lang.System.out.println(five);
+        System.out.println(two + "<%=cluster_number%>")
     }
 
 }
