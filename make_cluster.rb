@@ -79,7 +79,7 @@ end
 
 
 def run_simulation()
-  number_of_modules = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+  number_of_modules = [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
   number_of_clusters = [20, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3300, 3400, 3500, 3600, 3700, 3800, 3900, 4000]
   #number_of_clusters = [2000]
   times = []
@@ -101,15 +101,21 @@ def run_simulation()
         total_time += time
       end
       average_time = total_time / runs
+      puts "resting"
       sleep(average_time)
       puts "average: #{average_time}"
 
       cluster_times.push(average_time)
     end
+    puts "resting five minutes before write csv."
+    sleep(60 * 5)
+    CSV.open("buildtimes_#{modules}.csv", 'w') do |csv|
+       csv << cluster_times
+    end
   end
 
   puts times
-  CSV.open('buildtimes.csv', 'w') do |csv|
+  CSV.open('buildtimes_all.csv', 'w') do |csv|
     times.each { |module_times| csv << module_times }
   end
 

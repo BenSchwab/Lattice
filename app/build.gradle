@@ -29,6 +29,10 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
 
     api project(':module1')
+    api project(':module2')
+    api project(':module3')
+    api project(':module4')
+    api project(':module5')
     
 
     testImplementation 'junit:junit:4.12'
